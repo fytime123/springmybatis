@@ -12,7 +12,7 @@
         </commentGenerator>
 
         <!--数据库连接驱动类,URL，用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/testDataBase?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8" userId="root" password="root123">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/testDataBase?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8" userId="root" password="123456">
         </jdbcConnection>
 
         <javaTypeResolver>
