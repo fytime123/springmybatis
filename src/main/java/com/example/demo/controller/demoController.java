@@ -14,14 +14,14 @@ public class demoController {
     private demoControllerService service;
 
     @RequestMapping("/hello")
-    public String getName(@RequestParam("PK") String PK,  @RequestParam("password") String password){
+    public String getName(@RequestParam("name") String name, @RequestParam("password") String password) {
 
-        user resultUser = service.userLogin(PK, password);
-        if (resultUser != null){
-            return resultUser.getUsername();
+        user resultUser = service.userLogin(name, password);
+        if (resultUser != null) {
+            return "该用户的年龄是：" + resultUser.getAge();
 
-        }else {
-            return "没找到！";
+        } else {
+            return "用户名密码错误！";
         }
     }
 }
