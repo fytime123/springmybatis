@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class demoController {
+public class UserDBController {
 
     @Autowired
     private demoControllerService service;
 
-    @RequestMapping("/hello")
-    public String getName(@RequestParam("name") String name, @RequestParam("password") String password) {
+
+    @RequestMapping("/getAge")
+    public String getAge(@RequestParam("name") String name, @RequestParam("password") String password) {
 
         user resultUser = service.userLogin(name, password);
         if (resultUser != null) {
@@ -24,4 +25,7 @@ public class demoController {
             return "用户名密码错误！";
         }
     }
+
+
+
 }
