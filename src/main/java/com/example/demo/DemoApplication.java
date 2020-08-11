@@ -3,20 +3,6 @@ package com.example.demo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.io.*;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.*;
-
-import java.util.Collections;
 
 @SpringBootApplication
 @MapperScan("com.example.demo.dao")
